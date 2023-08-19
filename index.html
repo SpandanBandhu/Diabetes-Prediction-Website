@@ -1,0 +1,28 @@
+
+
+<title>Diabetes Predictor</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<div class="content">
+    <h1 style="text-align: center">Diabetes Predictor</h1>
+
+    <div class="form">
+        <form action="/prediction" method="POST">
+            <input type="number" name="glucose" id="glucose" step="0.001">
+            <label for="glucose">glucose</label>
+            <input type="number" name="bp" id="bp" step="0.001">
+            <label for="bp">bp</label>
+            <input type="number" name="skin" id="skin" step="0.001">
+            <label for="skin">skin</label>
+            <input type="number" name="insulin" id="insulin" step="0.001">
+            <label for="insulin">insulin</label>
+            <input type="number" name="bmi" id="bmi" step="0.001">
+            <label for="bmi">bmi</label>
+            <input type="number" name="pedigree" id="pedigree" step="0.001">
+            <label for="pedigree">pedigree</label>
+            <input type="number" name="age" id="age" step="0.001">
+            <label for="age">age</label>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
